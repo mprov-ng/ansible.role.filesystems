@@ -1,0 +1,12 @@
+---
+dependencies: []
+galaxy_info:
+  role_name: ansible_role_filesystems
+  author: jhujasonw
+  description: A simple role to make sure certain filesystmes are added to fstab and in their required states.
+  license: "license (Apache)"
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - all

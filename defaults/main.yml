@@ -1,0 +1,8 @@
+---
+fstab_entries:
+  - mount: /tmp
+    dev: tmpfs
+    options: size=8G
+    fstype: tmpfs
+    state: mounted
+  
