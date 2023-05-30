@@ -1,1 +1,11 @@
 ---
+- name: Mount filesystmes
+  mount:
+    fstype: "{{ item.fstype }}"
+    opts: "{{ item.opts }}"
+    src: "{{ item.src }}"
+    path: "{{ item.path }}"
+    state: mounted
+  become: yes    
+  with_items:
+     "{{ mounts }}" 
