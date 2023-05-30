@@ -8,4 +8,4 @@
     state: mounted
   become: yes    
   with_items:
-     "{{ mounts }}" 
+     "{{ fstab_entries }}" 
