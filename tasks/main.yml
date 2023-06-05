@@ -1,4 +1,10 @@
 ---
+
+- name: Install NFS utils
+  ansible.builtin.package:
+    name: nfs-utils
+    state: present
+    
 - name: Mount filesystmes
   mount:
     fstype: "{{ item.fstype }}"
